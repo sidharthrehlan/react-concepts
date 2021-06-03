@@ -1,7 +1,15 @@
-import React from "react";
+import "./App.css";
+import { UserProvider } from "./context/UserContext";
+import Menu from "./components/Menu";
 
 function App() {
-  return <div>Hello App</div>;
+  return (
+    <>
+      <UserProvider value="sidharth">
+        <Menu></Menu>
+      </UserProvider>
+    </>
+  );
 }
 
 export default App;
