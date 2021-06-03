@@ -1,7 +1,13 @@
-import React from "react";
+import ClickCounter from "./components/ClickCounter";
+import HoverCounter from "./components/HoverCounter";
 
 function App() {
-  return <div>Hello App</div>;
+  return (
+    <>
+      <HoverCounter></HoverCounter>
+      <ClickCounter></ClickCounter>
+    </>
+  );
 }
 
 export default App;
