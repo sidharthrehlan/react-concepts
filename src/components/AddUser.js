@@ -1,26 +1,43 @@
-import React, { useRef } from "react";
-import { useDispatch } from "react-redux";
-import { addUser } from "store/userReducer";
+import React, { Component } from "react";
+import { connect } from "react-redux";
+import { addUser } from "redux/actions/actionCreators";
 
-function AddUser() {
-  const userRef = useRef("");
-  const dispatch = useDispatch();
-  const onSubmitForm = (e) => {
+class AddUser extends Component {
+  constructor(props) {
+    super(props);
+
+    this.userRef = React.createRef();
+  }
+
+  onSubmitForm = (e) => {
     e.preventDefault();
-    const username = userRef.current.value;
-    dispatch(addUser({ firstname: username }));
+    const firstname = this.userRef.current.value;
+    this.props.addUser(firstname);
   };
 
-  return (
-    <section>
-      <h2>Add User Form</h2>
-      <form onSubmit={onSubmitForm}>
-        <label htmlFor="firstname">First name</label>
-        <input type="text" name="firstname" id="firstname" ref={userRef} />
-        <input type="submit" value="Submit" />
-      </form>
-    </section>
-  );
+  render() {
+    return (
+      <section>
+        <h2>Add User Form</h2>
+        <form onSubmit={this.onSubmitForm}>
+          <label htmlFor="firstname">First name</label>
+          <input
+            type="text"
+            name="firstname"
+            id="firstname"
+            ref={this.userRef}
+          />
+          <input type="submit" value="Submit" />
+        </form>
+      </section>
+    );
+  }
 }
 
-export default AddUser;
+const mapDispatchToProps = (dispatch) => {
+  return {
+    addUser: (firstname) => dispatch(addUser(firstname)),
+  };
+};
+
+export default connect(null, mapDispatchToProps)(AddUser);

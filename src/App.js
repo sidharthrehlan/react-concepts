@@ -1,7 +1,7 @@
 import React from "react";
 import AddUser from "components/AddUser";
 import UsersList from "components/UsersList";
-import store from "store/store";
+import store from "redux/store/store";
 import { Provider } from "react-redux";
 import "App.css";
 
