@@ -1,0 +1,5 @@
+{
+  "welcome": "Hola !",
+  "importantWord": "c'est un <bold>mot</bold> important",
+  "langChange": "La langue a changé {{count}} fois"
+}

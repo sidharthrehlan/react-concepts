@@ -1,0 +1,6 @@
+{
+  "welcome": "Welcome !",
+  "importantWord": "this is important <bold>word</bold>",
+  "langChange": "Language changed {{count}} time",
+  "langChange_plural": "Language changed {{count}} times"
+}
