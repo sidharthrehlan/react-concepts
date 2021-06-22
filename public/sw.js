@@ -26,7 +26,22 @@ this.addEventListener("install", (event) => {
  * Load cache urls on fetch event
  */
 this.addEventListener("fetch", (event) => {
+  event.waitUntil(
+    this.registration.showNotification("Internet", {
+      body: "internet not working",
+    })
+  );
   if (!navigator.onLine) {
+    // console.log(event.request.url);
+    //Show push notification for one request
+    if (event.request.url === "http://localhost:3000/") {
+      event.waitUntil(
+        this.registration.showNotification("Internet", {
+          body: "internet not working",
+        })
+      );
+    }
+
     event.respondWith(
       caches.match(event.request).then((result) => {
         if (result) {
