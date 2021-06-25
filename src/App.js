@@ -1,7 +1,8 @@
 import React from "react";
+import Parent from "./components/Parent";
 
 function App() {
-  return <div>Hello App</div>;
+  return <Parent></Parent>;
 }
 
 export default App;
