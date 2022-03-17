@@ -1,21 +1,21 @@
-import React from "react";
-import { Switch, Route } from "react-router-dom";
-import Login from "./components/Login";
-import Admin from "./components/Admin";
-import Logout from "./components/Logout";
+import React from 'react';
+import { Switch, Route } from 'react-router-dom';
+import Upload from './components/Upload';
+import Admin from './components/Admin';
+import Logout from './components/Logout';
 
-import "./App.css";
+import './App.css';
 
 function App() {
   return (
     <Switch>
-      <Route path="/" exact>
-        <Login />
+      <Route path='/' exact>
+        <Upload />
       </Route>
-      <Route path="/logout">
+      <Route path='/logout'>
         <Logout />
       </Route>
-      <Route path="/admin">
+      <Route path='/admin'>
         <Admin />
       </Route>
     </Switch>
