@@ -1,0 +1,11 @@
+.rcard-image {
+  width: 100px;
+}
+.results {
+  display: flex;
+  flex-wrap: wrap;
+}
+.rcard {
+  flex-direction: column;
+  width: 20%;
+}

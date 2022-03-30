@@ -1,0 +1,60 @@
+{
+  "restaurant": [
+    {
+      "id": 1,
+      "name": "dominos",
+      "rating": "4.5",
+      "distance": "5000",
+      "tags": ["pizza", "pasta"],
+      "image": "https://en.wikipedia.org/wiki/Domino%27s_Pizza_Enterprises#/media/File:Dominos_pizza_logo.svg"
+    },
+    {
+      "id": 2,
+      "name": "subway",
+      "rating": "4.5",
+      "distance": "2000",
+      "tags": ["pizza", "pasta"],
+      "image": "https://en.wikipedia.org/wiki/Domino%27s_Pizza_Enterprises#/media/File:Dominos_pizza_logo.svg"
+    },
+    {
+      "id": 3,
+      "name": "burgar King",
+      "rating": "3.5",
+      "distance": "1500",
+      "tags": ["burgar", "coffee"],
+      "image": "https://en.wikipedia.org/wiki/Domino%27s_Pizza_Enterprises#/media/File:Dominos_pizza_logo.svg"
+    },
+    {
+      "id": 4,
+      "name": "pizzaking",
+      "rating": "4.0",
+      "distance": "1000",
+      "tags": ["pizza", "pasta"],
+      "image": "https://en.wikipedia.org/wiki/Domino%27s_Pizza_Enterprises#/media/File:Dominos_pizza_logo.svg"
+    },
+    {
+      "id": 5,
+      "name": "haldiram",
+      "rating": "4.7",
+      "distance": "3000",
+      "tags": ["chole", "bhature"],
+      "image": "https://en.wikipedia.org/wiki/Domino%27s_Pizza_Enterprises#/media/File:Dominos_pizza_logo.svg"
+    },
+    {
+      "id": 6,
+      "name": "kfc",
+      "rating": "4.5",
+      "distance": "500",
+      "tags": ["chiken-bucket", "french-fries"],
+      "image": "https://en.wikipedia.org/wiki/Domino%27s_Pizza_Enterprises#/media/File:Dominos_pizza_logo.svg"
+    },
+    {
+      "id": 7,
+      "name": "wah ji wah",
+      "rating": "3.5",
+      "distance": "6000",
+      "tags": ["chaap", "tikka"],
+      "image": "https://en.wikipedia.org/wiki/Domino%27s_Pizza_Enterprises#/media/File:Dominos_pizza_logo.svg"
+    }
+  ]
+}
