@@ -1,10 +1,10 @@
 import React from 'react';
-import Search from './components/Search';
+import Printdoc from './components/Printdoc';
 
 function App() {
   return (
     <div>
-      <Search />
+      <Printdoc />
     </div>
   );
 }
