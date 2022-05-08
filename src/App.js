@@ -1,10 +1,14 @@
 import React from 'react';
-import Search from './components/Search';
+
+import ClickCounterHook from './components/ClickCounterHook';
+//import ClickCounter from './components/ClickCounter';
+import HoverCounterHook from './components/HoverCounterHook';
 
 function App() {
   return (
     <div>
-      <Search />
+      <ClickCounterHook />
+      <HoverCounterHook />
     </div>
   );
 }
