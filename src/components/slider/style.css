@@ -1,0 +1,33 @@
+.tab {
+  padding: 10px;
+  background-color: grey;
+  margin: 10px;
+  color: black;
+}
+
+.tab[aria-selected='true'] {
+  background-color: orange;
+}
+.navigation {
+  padding: 10px;
+  background-color: greenyellow;
+  margin: 10px;
+  color: black;
+}
+.navigation:disabled {
+  background-color: grey;
+}
+.tabs {
+  display: flex;
+}
+.tabSet {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  transition: left 1s cubic-bezier(0, 1, 0, 1);
+}
+.visibleArea {
+  width: 400px;
+  position: relative;
+  overflow: hidden;
+}

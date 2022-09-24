@@ -1,9 +1,10 @@
 import React from 'react';
-import Result from './components/Result';
+
+import Slider from './components/slider';
 import './style.css';
 
 function App() {
-  return <Result />;
+  return <Slider />;
 }
 
 export default App;
